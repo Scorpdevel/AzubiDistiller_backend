@@ -19,23 +19,23 @@ public class Rating {
     private  int Kundennummer;
     private  String Ratingverfahren;
     private  int Ratingnote; 
-    private  Date date;
+    private  String date;
     // SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
 
 
 
-    public Rating( Long id,int Kundennummer, String Ratingverfahren, int Ratingnote, Date date) {
-        this.id = id;
-        this.Kundennummer = Kundennummer;
-        this.Ratingverfahren = Ratingverfahren;
-        this.Ratingnote = Ratingnote;
-        this.date = date;
-    }
+    // public Rating( Long id,int Kundennummer, String Ratingverfahren, int Ratingnote, Date date) {
+    //     this.id = id;
+    //     this.Kundennummer = Kundennummer;
+    //     this.Ratingverfahren = Ratingverfahren;
+    //     this.Ratingnote = Ratingnote;
+    //     this.date = date;
+    // }
     
 
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
@@ -73,7 +73,7 @@ public class Rating {
     }
 
 
-    public Date getDate() {
+    public String getDate() {
         return this.date;
     }
 
