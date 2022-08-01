@@ -1,42 +1,42 @@
-// package com.example.azubidistiller.controller;
+package com.example.azubidistiller.controller;
 
 
 
 
-// import java.util.List;
+import java.util.List;
 
-// import org.springframework.beans.factory.annotation.Autowired;
-// import org.springframework.stereotype.Controller;
-// import org.springframework.web.bind.annotation.CrossOrigin;
-// import org.springframework.web.bind.annotation.GetMapping;
-// import org.springframework.web.bind.annotation.PostMapping;
-// import org.springframework.web.bind.annotation.RequestBody;
-// import org.springframework.web.bind.annotation.RequestMapping;
-// import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-// import com.example.azubidistiller.dao.KundeRepo;
-// import com.example.azubidistiller.model.Kunde;
+import com.example.azubidistiller.dao.KundeRepo;
+import com.example.azubidistiller.model.Kunde;
 
-// @RestController
-// @RequestMapping("/kunden")
-// @CrossOrigin(origins = "*")
-// public class KundeController {
+@RestController
+@RequestMapping("/kunden")
+@CrossOrigin(origins = "*")
+public class KundeController {
 
 
-//     @Autowired
-//     KundeRepo repo;
+    @Autowired
+    KundeRepo repo;
 
-//     @PostMapping("")
-//     public void createKunde(@RequestBody(required = false) Kunde kunde){
-//         repo.save(kunde);
+    @PostMapping("")
+    public void createKunde(@RequestBody(required = false) Kunde kunde){
+        repo.save(kunde);
         
-//     }
+    }
 
-//     @GetMapping("/getAll")
-//     public Iterable<Kunde> getAll(){
-//         return repo.findAll();
-//     }
+    @GetMapping("/getAll")
+    public Iterable<Kunde> getAll(){
+        return repo.findAll();
+    }
 
 
     
-// }
+}
